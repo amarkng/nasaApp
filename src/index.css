@@ -94,7 +94,7 @@ footer button:hover {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(to bottom, #11343a, transparent 25%);
+  background: linear-gradient(to bottom, #112e33, transparent 25%);
 }
 
 .sidebar {
@@ -129,10 +129,34 @@ footer button:hover {
   border-radius: 12px;
 }
 
-.name {
-  margin-left: auto;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2px;
+  box-sizing: border-box;
+  margin-bottom: auto;
+  width: 100%;
+}
+
+.nasalogo {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  margin-left: 2px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: auto;
+}
+
+.name i {
+  font-size: 1rem;
+  margin-right: 6px;
 }
 
 .sidebarContents div {
@@ -141,6 +165,7 @@ footer button:hover {
 
 .sidebarContents h2 {
   font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.6rem;
   color: rgba(255, 255, 255, 0.85);
 }
@@ -164,14 +189,18 @@ footer button:hover {
 
 .descriptionTitle {
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 222;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .descriptionContainer {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.2rem;
+}
+
+.descriptionContainer .descriptionExplanation {
+  font-weight: 250;
 }
 
 .loadingState {
